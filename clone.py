@@ -34,7 +34,7 @@ def command_line()->List[str]:
     parser = argparse.ArgumentParser(description="Fast and light big scale git repositories cloner")
 
     parser.add_argument('-i', '--input', help="csv path which contains git repository urls", default = "./repositories.csv")
-    parser.add_argument('-c', '--column', help="column number of urls in the csv", default=0)
+    parser.add_argument('-c', '--column', help="column number of urls in the csv", default=5)
     parser.add_argument('-o','--output', help = "output path for cloned repositories", default="./")
 
     return parser.parse_args()
